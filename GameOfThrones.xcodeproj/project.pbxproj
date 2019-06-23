@@ -1,0 +1,925 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4206A01E217FD69E002B81B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4206A01D217FD69E002B81B4 /* Assets.xcassets */; };
+		4206A021217FD69E002B81B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4206A01F217FD69E002B81B4 /* LaunchScreen.storyboard */; };
+		4206A037217FD69E002B81B4 /* GameOfThronesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A036217FD69E002B81B4 /* GameOfThronesUITests.swift */; };
+		4206A07A217FD6C6002B81B4 /* CurrencyRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A045217FD6C6002B81B4 /* CurrencyRate.swift */; };
+		4206A07B217FD6C6002B81B4 /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A046217FD6C6002B81B4 /* Warrior.swift */; };
+		4206A07C217FD6C6002B81B4 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A047217FD6C6002B81B4 /* Currency.swift */; };
+		4206A07D217FD6C6002B81B4 /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A048217FD6C6002B81B4 /* Segment.swift */; };
+		4206A07E217FD6C6002B81B4 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A049217FD6C6002B81B4 /* Flight.swift */; };
+		4206A07F217FD6C6002B81B4 /* SavedCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A04A217FD6C6002B81B4 /* SavedCurrency.swift */; };
+		4206A080217FD6C6002B81B4 /* FlightsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A04B217FD6C6002B81B4 /* FlightsResponse.swift */; };
+		4206A081217FD6C6002B81B4 /* DatabaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A04E217FD6C6002B81B4 /* DatabaseProvider.swift */; };
+		4206A082217FD6C6002B81B4 /* DatabaseProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A04F217FD6C6002B81B4 /* DatabaseProviderProtocol.swift */; };
+		4206A083217FD6C6002B81B4 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A051217FD6C6002B81B4 /* Endpoints.swift */; };
+		4206A084217FD6C6002B81B4 /* EndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A052217FD6C6002B81B4 /* EndpointProtocol.swift */; };
+		4206A085217FD6C6002B81B4 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A053217FD6C6002B81B4 /* NetworkProvider.swift */; };
+		4206A086217FD6C6002B81B4 /* NetworkProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A054217FD6C6002B81B4 /* NetworkProviderProtocol.swift */; };
+		4206A087217FD6C6002B81B4 /* FlightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A056217FD6C6002B81B4 /* FlightService.swift */; };
+		4206A088217FD6C6002B81B4 /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A057217FD6C6002B81B4 /* CurrencyService.swift */; };
+		4206A089217FD6C6002B81B4 /* WarriorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A058217FD6C6002B81B4 /* WarriorService.swift */; };
+		4206A08A217FD6C6002B81B4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A05A217FD6C6002B81B4 /* AppCoordinator.swift */; };
+		4206A08B217FD6C6002B81B4 /* Coordinatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A05B217FD6C6002B81B4 /* Coordinatable.swift */; };
+		4206A08C217FD6C6002B81B4 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A05D217FD6C6002B81B4 /* ArrayExtensions.swift */; };
+		4206A08D217FD6C6002B81B4 /* CodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A05E217FD6C6002B81B4 /* CodableExtensions.swift */; };
+		4206A08E217FD6C6002B81B4 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A05F217FD6C6002B81B4 /* UIViewControllerExtensions.swift */; };
+		4206A08F217FD6C6002B81B4 /* URLSessionDataTaskExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A060217FD6C6002B81B4 /* URLSessionDataTaskExtensions.swift */; };
+		4206A090217FD6C6002B81B4 /* URLSessionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A061217FD6C6002B81B4 /* URLSessionExtensions.swift */; };
+		4206A091217FD6C6002B81B4 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A062217FD6C6002B81B4 /* DateExtensions.swift */; };
+		4206A092217FD6C6002B81B4 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A065217FD6C6002B81B4 /* SettingsViewModel.swift */; };
+		4206A093217FD6C6002B81B4 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4206A066217FD6C6002B81B4 /* SettingsViewController.xib */; };
+		4206A094217FD6C6002B81B4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A067217FD6C6002B81B4 /* SettingsViewController.swift */; };
+		4206A095217FD6C6002B81B4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A068217FD6C6002B81B4 /* BaseViewController.swift */; };
+		4206A096217FD6C6002B81B4 /* BestFaresTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4206A06B217FD6C6002B81B4 /* BestFaresTableViewCell.xib */; };
+		4206A097217FD6C6002B81B4 /* BestFaresTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A06C217FD6C6002B81B4 /* BestFaresTableViewCell.swift */; };
+		4206A098217FD6C6002B81B4 /* BestFaresViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4206A06D217FD6C6002B81B4 /* BestFaresViewController.xib */; };
+		4206A099217FD6C6002B81B4 /* BestFaresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A06E217FD6C6002B81B4 /* BestFaresViewModel.swift */; };
+		4206A09A217FD6C6002B81B4 /* BestFaresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A06F217FD6C6002B81B4 /* BestFaresViewController.swift */; };
+		4206A09B217FD6C6002B81B4 /* ListFaresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A071217FD6C6002B81B4 /* ListFaresViewModel.swift */; };
+		4206A09C217FD6C6002B81B4 /* FlightFaresTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4206A073217FD6C6002B81B4 /* FlightFaresTableViewCell.xib */; };
+		4206A09D217FD6C6002B81B4 /* FlightFaresTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A074217FD6C6002B81B4 /* FlightFaresTableViewCell.swift */; };
+		4206A09E217FD6C6002B81B4 /* ListFaresViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4206A075217FD6C6002B81B4 /* ListFaresViewController.xib */; };
+		4206A09F217FD6C6002B81B4 /* ListFaresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A076217FD6C6002B81B4 /* ListFaresViewController.swift */; };
+		4206A0A0217FD6C6002B81B4 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4206A078217FD6C6002B81B4 /* MainViewController.xib */; };
+		4206A0A1217FD6C6002B81B4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A079217FD6C6002B81B4 /* MainViewController.swift */; };
+		4206A0A3217FD6CF002B81B4 /* GotError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A0A2217FD6CF002B81B4 /* GotError.swift */; };
+		4206A0A5217FD6D9002B81B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A0A4217FD6D9002B81B4 /* AppDelegate.swift */; };
+		4206A0B4217FD733002B81B4 /* DatabaseProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A0A8217FD733002B81B4 /* DatabaseProviderTests.swift */; };
+		4206A0B5217FD733002B81B4 /* NetworkProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A0AA217FD733002B81B4 /* NetworkProviderTests.swift */; };
+		4206A0B6217FD733002B81B4 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A0AC217FD733002B81B4 /* MockURLSession.swift */; };
+		4206A0B7217FD733002B81B4 /* MockWarriorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A0AD217FD733002B81B4 /* MockWarriorService.swift */; };
+		4206A0B8217FD733002B81B4 /* MockNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A0AE217FD733002B81B4 /* MockNetworkProvider.swift */; };
+		4206A0B9217FD733002B81B4 /* MockURLSessesionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A0AF217FD733002B81B4 /* MockURLSessesionDataTask.swift */; };
+		4206A0BA217FD733002B81B4 /* SettingsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A0B1217FD733002B81B4 /* SettingsViewModelTests.swift */; };
+		4206A0BB217FD733002B81B4 /* FlightServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206A0B3217FD733002B81B4 /* FlightServiceTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4206A028217FD69E002B81B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4206A00B217FD69D002B81B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4206A012217FD69D002B81B4;
+			remoteInfo = GameOfThrones;
+		};
+		4206A033217FD69E002B81B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4206A00B217FD69D002B81B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4206A012217FD69D002B81B4;
+			remoteInfo = GameOfThrones;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4206A013217FD69D002B81B4 /* GameOfThrones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameOfThrones.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4206A01D217FD69E002B81B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4206A020217FD69E002B81B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4206A022217FD69E002B81B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4206A027217FD69E002B81B4 /* GameOfThronesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameOfThronesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4206A02D217FD69E002B81B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4206A032217FD69E002B81B4 /* GameOfThronesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameOfThronesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4206A036217FD69E002B81B4 /* GameOfThronesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfThronesUITests.swift; sourceTree = "<group>"; };
+		4206A038217FD69E002B81B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4206A045217FD6C6002B81B4 /* CurrencyRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyRate.swift; sourceTree = "<group>"; };
+		4206A046217FD6C6002B81B4 /* Warrior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Warrior.swift; sourceTree = "<group>"; };
+		4206A047217FD6C6002B81B4 /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		4206A048217FD6C6002B81B4 /* Segment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Segment.swift; sourceTree = "<group>"; };
+		4206A049217FD6C6002B81B4 /* Flight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		4206A04A217FD6C6002B81B4 /* SavedCurrency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedCurrency.swift; sourceTree = "<group>"; };
+		4206A04B217FD6C6002B81B4 /* FlightsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightsResponse.swift; sourceTree = "<group>"; };
+		4206A04E217FD6C6002B81B4 /* DatabaseProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseProvider.swift; sourceTree = "<group>"; };
+		4206A04F217FD6C6002B81B4 /* DatabaseProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseProviderProtocol.swift; sourceTree = "<group>"; };
+		4206A051217FD6C6002B81B4 /* Endpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		4206A052217FD6C6002B81B4 /* EndpointProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointProtocol.swift; sourceTree = "<group>"; };
+		4206A053217FD6C6002B81B4 /* NetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		4206A054217FD6C6002B81B4 /* NetworkProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProviderProtocol.swift; sourceTree = "<group>"; };
+		4206A056217FD6C6002B81B4 /* FlightService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightService.swift; sourceTree = "<group>"; };
+		4206A057217FD6C6002B81B4 /* CurrencyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
+		4206A058217FD6C6002B81B4 /* WarriorService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarriorService.swift; sourceTree = "<group>"; };
+		4206A05A217FD6C6002B81B4 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		4206A05B217FD6C6002B81B4 /* Coordinatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinatable.swift; sourceTree = "<group>"; };
+		4206A05D217FD6C6002B81B4 /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		4206A05E217FD6C6002B81B4 /* CodableExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodableExtensions.swift; sourceTree = "<group>"; };
+		4206A05F217FD6C6002B81B4 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		4206A060217FD6C6002B81B4 /* URLSessionDataTaskExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskExtensions.swift; sourceTree = "<group>"; };
+		4206A061217FD6C6002B81B4 /* URLSessionExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionExtensions.swift; sourceTree = "<group>"; };
+		4206A062217FD6C6002B81B4 /* DateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		4206A065217FD6C6002B81B4 /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		4206A066217FD6C6002B81B4 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		4206A067217FD6C6002B81B4 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		4206A068217FD6C6002B81B4 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		4206A06B217FD6C6002B81B4 /* BestFaresTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BestFaresTableViewCell.xib; sourceTree = "<group>"; };
+		4206A06C217FD6C6002B81B4 /* BestFaresTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BestFaresTableViewCell.swift; sourceTree = "<group>"; };
+		4206A06D217FD6C6002B81B4 /* BestFaresViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BestFaresViewController.xib; sourceTree = "<group>"; };
+		4206A06E217FD6C6002B81B4 /* BestFaresViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BestFaresViewModel.swift; sourceTree = "<group>"; };
+		4206A06F217FD6C6002B81B4 /* BestFaresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BestFaresViewController.swift; sourceTree = "<group>"; };
+		4206A071217FD6C6002B81B4 /* ListFaresViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListFaresViewModel.swift; sourceTree = "<group>"; };
+		4206A073217FD6C6002B81B4 /* FlightFaresTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlightFaresTableViewCell.xib; sourceTree = "<group>"; };
+		4206A074217FD6C6002B81B4 /* FlightFaresTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightFaresTableViewCell.swift; sourceTree = "<group>"; };
+		4206A075217FD6C6002B81B4 /* ListFaresViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListFaresViewController.xib; sourceTree = "<group>"; };
+		4206A076217FD6C6002B81B4 /* ListFaresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListFaresViewController.swift; sourceTree = "<group>"; };
+		4206A078217FD6C6002B81B4 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		4206A079217FD6C6002B81B4 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4206A0A2217FD6CF002B81B4 /* GotError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GotError.swift; sourceTree = "<group>"; };
+		4206A0A4217FD6D9002B81B4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4206A0A8217FD733002B81B4 /* DatabaseProviderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseProviderTests.swift; sourceTree = "<group>"; };
+		4206A0AA217FD733002B81B4 /* NetworkProviderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProviderTests.swift; sourceTree = "<group>"; };
+		4206A0AC217FD733002B81B4 /* MockURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		4206A0AD217FD733002B81B4 /* MockWarriorService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockWarriorService.swift; sourceTree = "<group>"; };
+		4206A0AE217FD733002B81B4 /* MockNetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockNetworkProvider.swift; sourceTree = "<group>"; };
+		4206A0AF217FD733002B81B4 /* MockURLSessesionDataTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockURLSessesionDataTask.swift; sourceTree = "<group>"; };
+		4206A0B1217FD733002B81B4 /* SettingsViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModelTests.swift; sourceTree = "<group>"; };
+		4206A0B3217FD733002B81B4 /* FlightServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightServiceTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4206A010217FD69D002B81B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4206A024217FD69E002B81B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4206A02F217FD69E002B81B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4206A00A217FD69D002B81B4 = {
+			isa = PBXGroup;
+			children = (
+				4206A015217FD69D002B81B4 /* GameOfThrones */,
+				4206A02A217FD69E002B81B4 /* GameOfThronesTests */,
+				4206A035217FD69E002B81B4 /* GameOfThronesUITests */,
+				4206A014217FD69D002B81B4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4206A014217FD69D002B81B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4206A013217FD69D002B81B4 /* GameOfThrones.app */,
+				4206A027217FD69E002B81B4 /* GameOfThronesTests.xctest */,
+				4206A032217FD69E002B81B4 /* GameOfThronesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4206A015217FD69D002B81B4 /* GameOfThrones */ = {
+			isa = PBXGroup;
+			children = (
+				4206A059217FD6C6002B81B4 /* Coordinator */,
+				4206A05C217FD6C6002B81B4 /* Extensions */,
+				4206A044217FD6C6002B81B4 /* Model */,
+				4206A04C217FD6C6002B81B4 /* Providers */,
+				4206A055217FD6C6002B81B4 /* Services */,
+				4206A063217FD6C6002B81B4 /* ViewControllers */,
+				4206A01D217FD69E002B81B4 /* Assets.xcassets */,
+				4206A01F217FD69E002B81B4 /* LaunchScreen.storyboard */,
+				4206A022217FD69E002B81B4 /* Info.plist */,
+				4206A0A2217FD6CF002B81B4 /* GotError.swift */,
+				4206A0A4217FD6D9002B81B4 /* AppDelegate.swift */,
+			);
+			path = GameOfThrones;
+			sourceTree = "<group>";
+		};
+		4206A02A217FD69E002B81B4 /* GameOfThronesTests */ = {
+			isa = PBXGroup;
+			children = (
+				4206A0AB217FD733002B81B4 /* Mocks */,
+				4206A0A6217FD733002B81B4 /* Providers */,
+				4206A0B0217FD733002B81B4 /* ViewModels */,
+				4206A0B2217FD733002B81B4 /* Services */,
+				4206A02D217FD69E002B81B4 /* Info.plist */,
+			);
+			path = GameOfThronesTests;
+			sourceTree = "<group>";
+		};
+		4206A035217FD69E002B81B4 /* GameOfThronesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4206A036217FD69E002B81B4 /* GameOfThronesUITests.swift */,
+				4206A038217FD69E002B81B4 /* Info.plist */,
+			);
+			path = GameOfThronesUITests;
+			sourceTree = "<group>";
+		};
+		4206A044217FD6C6002B81B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4206A045217FD6C6002B81B4 /* CurrencyRate.swift */,
+				4206A046217FD6C6002B81B4 /* Warrior.swift */,
+				4206A047217FD6C6002B81B4 /* Currency.swift */,
+				4206A048217FD6C6002B81B4 /* Segment.swift */,
+				4206A049217FD6C6002B81B4 /* Flight.swift */,
+				4206A04A217FD6C6002B81B4 /* SavedCurrency.swift */,
+				4206A04B217FD6C6002B81B4 /* FlightsResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4206A04C217FD6C6002B81B4 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				4206A04D217FD6C6002B81B4 /* Database */,
+				4206A050217FD6C6002B81B4 /* Network */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		4206A04D217FD6C6002B81B4 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				4206A04E217FD6C6002B81B4 /* DatabaseProvider.swift */,
+				4206A04F217FD6C6002B81B4 /* DatabaseProviderProtocol.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		4206A050217FD6C6002B81B4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4206A051217FD6C6002B81B4 /* Endpoints.swift */,
+				4206A052217FD6C6002B81B4 /* EndpointProtocol.swift */,
+				4206A053217FD6C6002B81B4 /* NetworkProvider.swift */,
+				4206A054217FD6C6002B81B4 /* NetworkProviderProtocol.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4206A055217FD6C6002B81B4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4206A056217FD6C6002B81B4 /* FlightService.swift */,
+				4206A057217FD6C6002B81B4 /* CurrencyService.swift */,
+				4206A058217FD6C6002B81B4 /* WarriorService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4206A059217FD6C6002B81B4 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4206A05A217FD6C6002B81B4 /* AppCoordinator.swift */,
+				4206A05B217FD6C6002B81B4 /* Coordinatable.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		4206A05C217FD6C6002B81B4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4206A05D217FD6C6002B81B4 /* ArrayExtensions.swift */,
+				4206A05E217FD6C6002B81B4 /* CodableExtensions.swift */,
+				4206A05F217FD6C6002B81B4 /* UIViewControllerExtensions.swift */,
+				4206A060217FD6C6002B81B4 /* URLSessionDataTaskExtensions.swift */,
+				4206A061217FD6C6002B81B4 /* URLSessionExtensions.swift */,
+				4206A062217FD6C6002B81B4 /* DateExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4206A063217FD6C6002B81B4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4206A064217FD6C6002B81B4 /* Settings */,
+				4206A068217FD6C6002B81B4 /* BaseViewController.swift */,
+				4206A069217FD6C6002B81B4 /* BestFares */,
+				4206A070217FD6C6002B81B4 /* ListFares */,
+				4206A077217FD6C6002B81B4 /* Main */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4206A064217FD6C6002B81B4 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				4206A065217FD6C6002B81B4 /* SettingsViewModel.swift */,
+				4206A066217FD6C6002B81B4 /* SettingsViewController.xib */,
+				4206A067217FD6C6002B81B4 /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		4206A069217FD6C6002B81B4 /* BestFares */ = {
+			isa = PBXGroup;
+			children = (
+				4206A06A217FD6C6002B81B4 /* Cells */,
+				4206A06D217FD6C6002B81B4 /* BestFaresViewController.xib */,
+				4206A06E217FD6C6002B81B4 /* BestFaresViewModel.swift */,
+				4206A06F217FD6C6002B81B4 /* BestFaresViewController.swift */,
+			);
+			path = BestFares;
+			sourceTree = "<group>";
+		};
+		4206A06A217FD6C6002B81B4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4206A06B217FD6C6002B81B4 /* BestFaresTableViewCell.xib */,
+				4206A06C217FD6C6002B81B4 /* BestFaresTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4206A070217FD6C6002B81B4 /* ListFares */ = {
+			isa = PBXGroup;
+			children = (
+				4206A071217FD6C6002B81B4 /* ListFaresViewModel.swift */,
+				4206A072217FD6C6002B81B4 /* Cells */,
+				4206A075217FD6C6002B81B4 /* ListFaresViewController.xib */,
+				4206A076217FD6C6002B81B4 /* ListFaresViewController.swift */,
+			);
+			path = ListFares;
+			sourceTree = "<group>";
+		};
+		4206A072217FD6C6002B81B4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4206A073217FD6C6002B81B4 /* FlightFaresTableViewCell.xib */,
+				4206A074217FD6C6002B81B4 /* FlightFaresTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4206A077217FD6C6002B81B4 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4206A078217FD6C6002B81B4 /* MainViewController.xib */,
+				4206A079217FD6C6002B81B4 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4206A0A6217FD733002B81B4 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				4206A0A7217FD733002B81B4 /* Database */,
+				4206A0A9217FD733002B81B4 /* Network */,
+			);
+			name = Providers;
+			path = ../../Edreams/EdreamsTests/Providers;
+			sourceTree = "<group>";
+		};
+		4206A0A7217FD733002B81B4 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				4206A0A8217FD733002B81B4 /* DatabaseProviderTests.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		4206A0A9217FD733002B81B4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4206A0AA217FD733002B81B4 /* NetworkProviderTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4206A0AB217FD733002B81B4 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				4206A0AC217FD733002B81B4 /* MockURLSession.swift */,
+				4206A0AD217FD733002B81B4 /* MockWarriorService.swift */,
+				4206A0AE217FD733002B81B4 /* MockNetworkProvider.swift */,
+				4206A0AF217FD733002B81B4 /* MockURLSessesionDataTask.swift */,
+			);
+			name = Mocks;
+			path = ../../Edreams/EdreamsTests/Mocks;
+			sourceTree = "<group>";
+		};
+		4206A0B0217FD733002B81B4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4206A0B1217FD733002B81B4 /* SettingsViewModelTests.swift */,
+			);
+			name = ViewModels;
+			path = ../../Edreams/EdreamsTests/ViewModels;
+			sourceTree = "<group>";
+		};
+		4206A0B2217FD733002B81B4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4206A0B3217FD733002B81B4 /* FlightServiceTests.swift */,
+			);
+			name = Services;
+			path = ../../Edreams/EdreamsTests/Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4206A012217FD69D002B81B4 /* GameOfThrones */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4206A03B217FD69E002B81B4 /* Build configuration list for PBXNativeTarget "GameOfThrones" */;
+			buildPhases = (
+				4206A00F217FD69D002B81B4 /* Sources */,
+				4206A010217FD69D002B81B4 /* Frameworks */,
+				4206A011217FD69D002B81B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GameOfThrones;
+			productName = GameOfThrones;
+			productReference = 4206A013217FD69D002B81B4 /* GameOfThrones.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4206A026217FD69E002B81B4 /* GameOfThronesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4206A03E217FD69E002B81B4 /* Build configuration list for PBXNativeTarget "GameOfThronesTests" */;
+			buildPhases = (
+				4206A023217FD69E002B81B4 /* Sources */,
+				4206A024217FD69E002B81B4 /* Frameworks */,
+				4206A025217FD69E002B81B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4206A029217FD69E002B81B4 /* PBXTargetDependency */,
+			);
+			name = GameOfThronesTests;
+			productName = GameOfThronesTests;
+			productReference = 4206A027217FD69E002B81B4 /* GameOfThronesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4206A031217FD69E002B81B4 /* GameOfThronesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4206A041217FD69E002B81B4 /* Build configuration list for PBXNativeTarget "GameOfThronesUITests" */;
+			buildPhases = (
+				4206A02E217FD69E002B81B4 /* Sources */,
+				4206A02F217FD69E002B81B4 /* Frameworks */,
+				4206A030217FD69E002B81B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4206A034217FD69E002B81B4 /* PBXTargetDependency */,
+			);
+			name = GameOfThronesUITests;
+			productName = GameOfThronesUITests;
+			productReference = 4206A032217FD69E002B81B4 /* GameOfThronesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4206A00B217FD69D002B81B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Ivan Ruiz Monjo";
+				TargetAttributes = {
+					4206A012217FD69D002B81B4 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					4206A026217FD69E002B81B4 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 4206A012217FD69D002B81B4;
+					};
+					4206A031217FD69E002B81B4 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 4206A012217FD69D002B81B4;
+					};
+				};
+			};
+			buildConfigurationList = 4206A00E217FD69D002B81B4 /* Build configuration list for PBXProject "GameOfThrones" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4206A00A217FD69D002B81B4;
+			productRefGroup = 4206A014217FD69D002B81B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4206A012217FD69D002B81B4 /* GameOfThrones */,
+				4206A026217FD69E002B81B4 /* GameOfThronesTests */,
+				4206A031217FD69E002B81B4 /* GameOfThronesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4206A011217FD69D002B81B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4206A098217FD6C6002B81B4 /* BestFaresViewController.xib in Resources */,
+				4206A021217FD69E002B81B4 /* LaunchScreen.storyboard in Resources */,
+				4206A096217FD6C6002B81B4 /* BestFaresTableViewCell.xib in Resources */,
+				4206A0A0217FD6C6002B81B4 /* MainViewController.xib in Resources */,
+				4206A09C217FD6C6002B81B4 /* FlightFaresTableViewCell.xib in Resources */,
+				4206A093217FD6C6002B81B4 /* SettingsViewController.xib in Resources */,
+				4206A09E217FD6C6002B81B4 /* ListFaresViewController.xib in Resources */,
+				4206A01E217FD69E002B81B4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4206A025217FD69E002B81B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4206A030217FD69E002B81B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4206A00F217FD69D002B81B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4206A07C217FD6C6002B81B4 /* Currency.swift in Sources */,
+				4206A081217FD6C6002B81B4 /* DatabaseProvider.swift in Sources */,
+				4206A08C217FD6C6002B81B4 /* ArrayExtensions.swift in Sources */,
+				4206A08A217FD6C6002B81B4 /* AppCoordinator.swift in Sources */,
+				4206A07B217FD6C6002B81B4 /* Warrior.swift in Sources */,
+				4206A095217FD6C6002B81B4 /* BaseViewController.swift in Sources */,
+				4206A091217FD6C6002B81B4 /* DateExtensions.swift in Sources */,
+				4206A0A1217FD6C6002B81B4 /* MainViewController.swift in Sources */,
+				4206A099217FD6C6002B81B4 /* BestFaresViewModel.swift in Sources */,
+				4206A0A3217FD6CF002B81B4 /* GotError.swift in Sources */,
+				4206A08F217FD6C6002B81B4 /* URLSessionDataTaskExtensions.swift in Sources */,
+				4206A080217FD6C6002B81B4 /* FlightsResponse.swift in Sources */,
+				4206A0A5217FD6D9002B81B4 /* AppDelegate.swift in Sources */,
+				4206A097217FD6C6002B81B4 /* BestFaresTableViewCell.swift in Sources */,
+				4206A09D217FD6C6002B81B4 /* FlightFaresTableViewCell.swift in Sources */,
+				4206A08B217FD6C6002B81B4 /* Coordinatable.swift in Sources */,
+				4206A083217FD6C6002B81B4 /* Endpoints.swift in Sources */,
+				4206A092217FD6C6002B81B4 /* SettingsViewModel.swift in Sources */,
+				4206A088217FD6C6002B81B4 /* CurrencyService.swift in Sources */,
+				4206A089217FD6C6002B81B4 /* WarriorService.swift in Sources */,
+				4206A085217FD6C6002B81B4 /* NetworkProvider.swift in Sources */,
+				4206A07F217FD6C6002B81B4 /* SavedCurrency.swift in Sources */,
+				4206A09A217FD6C6002B81B4 /* BestFaresViewController.swift in Sources */,
+				4206A08D217FD6C6002B81B4 /* CodableExtensions.swift in Sources */,
+				4206A08E217FD6C6002B81B4 /* UIViewControllerExtensions.swift in Sources */,
+				4206A084217FD6C6002B81B4 /* EndpointProtocol.swift in Sources */,
+				4206A09B217FD6C6002B81B4 /* ListFaresViewModel.swift in Sources */,
+				4206A07A217FD6C6002B81B4 /* CurrencyRate.swift in Sources */,
+				4206A07E217FD6C6002B81B4 /* Flight.swift in Sources */,
+				4206A090217FD6C6002B81B4 /* URLSessionExtensions.swift in Sources */,
+				4206A09F217FD6C6002B81B4 /* ListFaresViewController.swift in Sources */,
+				4206A07D217FD6C6002B81B4 /* Segment.swift in Sources */,
+				4206A082217FD6C6002B81B4 /* DatabaseProviderProtocol.swift in Sources */,
+				4206A094217FD6C6002B81B4 /* SettingsViewController.swift in Sources */,
+				4206A086217FD6C6002B81B4 /* NetworkProviderProtocol.swift in Sources */,
+				4206A087217FD6C6002B81B4 /* FlightService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4206A023217FD69E002B81B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4206A0B7217FD733002B81B4 /* MockWarriorService.swift in Sources */,
+				4206A0B6217FD733002B81B4 /* MockURLSession.swift in Sources */,
+				4206A0B4217FD733002B81B4 /* DatabaseProviderTests.swift in Sources */,
+				4206A0BA217FD733002B81B4 /* SettingsViewModelTests.swift in Sources */,
+				4206A0B8217FD733002B81B4 /* MockNetworkProvider.swift in Sources */,
+				4206A0BB217FD733002B81B4 /* FlightServiceTests.swift in Sources */,
+				4206A0B5217FD733002B81B4 /* NetworkProviderTests.swift in Sources */,
+				4206A0B9217FD733002B81B4 /* MockURLSessesionDataTask.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4206A02E217FD69E002B81B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4206A037217FD69E002B81B4 /* GameOfThronesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4206A029217FD69E002B81B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4206A012217FD69D002B81B4 /* GameOfThrones */;
+			targetProxy = 4206A028217FD69E002B81B4 /* PBXContainerItemProxy */;
+		};
+		4206A034217FD69E002B81B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4206A012217FD69D002B81B4 /* GameOfThrones */;
+			targetProxy = 4206A033217FD69E002B81B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4206A01F217FD69E002B81B4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4206A020217FD69E002B81B4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4206A039217FD69E002B81B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4206A03A217FD69E002B81B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4206A03C217FD69E002B81B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GameOfThrones/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ivan.GameOfThrones;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4206A03D217FD69E002B81B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GameOfThrones/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ivan.GameOfThrones;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4206A03F217FD69E002B81B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GameOfThronesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ivan.GameOfThronesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameOfThrones.app/GameOfThrones";
+			};
+			name = Debug;
+		};
+		4206A040217FD69E002B81B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GameOfThronesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ivan.GameOfThronesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameOfThrones.app/GameOfThrones";
+			};
+			name = Release;
+		};
+		4206A042217FD69E002B81B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GameOfThronesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ivan.GameOfThronesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GameOfThrones;
+			};
+			name = Debug;
+		};
+		4206A043217FD69E002B81B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GameOfThronesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ivan.GameOfThronesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GameOfThrones;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4206A00E217FD69D002B81B4 /* Build configuration list for PBXProject "GameOfThrones" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4206A039217FD69E002B81B4 /* Debug */,
+				4206A03A217FD69E002B81B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4206A03B217FD69E002B81B4 /* Build configuration list for PBXNativeTarget "GameOfThrones" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4206A03C217FD69E002B81B4 /* Debug */,
+				4206A03D217FD69E002B81B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4206A03E217FD69E002B81B4 /* Build configuration list for PBXNativeTarget "GameOfThronesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4206A03F217FD69E002B81B4 /* Debug */,
+				4206A040217FD69E002B81B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4206A041217FD69E002B81B4 /* Build configuration list for PBXNativeTarget "GameOfThronesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4206A042217FD69E002B81B4 /* Debug */,
+				4206A043217FD69E002B81B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4206A00B217FD69D002B81B4 /* Project object */;
+}
